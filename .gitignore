@@ -1,0 +1,17 @@
+# archive/ is a local-only dump: the video evolution Ron collects + superseded records.
+# Kept locally, not published. (Retired challenge docs must NOT go here — keep them tracked.)
+archive/
+
+# Video / media safety net, in case any land outside archive/
+*.mp4
+*.mov
+*.webm
+*.mkv
+*.avi
+*.m4v
+
+# OS / editor junk
+Thumbs.db
+Desktop.ini
+.DS_Store
+*~

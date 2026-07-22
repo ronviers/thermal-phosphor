@@ -1,0 +1,1 @@
+**Solve this challenge.** Your answer must be an explicit construction — the tuple (S, N, c, A, W) with the generator written out, plus the computations the deliverable asks for. Do not critique, summarize, or rewrite the challenge; produce the construction. If you can't satisfy every condition, name the one that blocks you — don't revise the problem.
