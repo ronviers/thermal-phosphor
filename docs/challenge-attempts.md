@@ -1,6 +1,6 @@
 # CHALLENGE.md — attempts log
 
-One row per attempt at [`../CHALLENGE.md`](../CHALLENGE.md). Per-condition outcome: `✓` pass · `✗` fail · `—` not reached · `?` unverified. `verdict` captures the overall result; when a solver forfeits it names the condition it declared as the block.
+One row per attempt at [`../CHALLENGE.md`](../CHALLENGE.md). Raw external-model transcripts behind these entries live in [`external/`](external/) (e.g. Gemini's attempts #3/#5 in [`external/gemini_clamp-motif-and-cascade.md`](external/gemini_clamp-motif-and-cascade.md)). Per-condition outcome: `✓` pass · `✗` fail · `—` not reached · `?` unverified. `verdict` captures the overall result; when a solver forfeits it names the condition it declared as the block.
 
 | # | date | model | C0 | C1 | C2 | C3 | C4 | verdict |
 |---|---|---|---|---|---|---|---|---|

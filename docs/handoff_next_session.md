@@ -19,7 +19,7 @@ The work now **pseudo-forks** into two tracks. They share everything upstream �
 
 ### Track A — the folding grammar (the math proof) — LIVE, immediate
 The abstract question: **does a minimal self-folding sequence-encoded catalyst exist that passes C0–C5 on a lattice?** This is the "theoretical right to exist" — the rigorous argument that a capacity-unbounded replicator can run under uniform local rules without smuggling in a machine.
-- **Artifact:** [`../CHALLENGE-fold.md`](../CHALLENGE-fold.md) (my v0, written this session). Gemini's parallel v0 is at [`../gemini draft folding grammar v0.md`](../gemini%20draft%20folding%20grammar%20v0.md) — **first next-session action is to compare the two v0 folding grammars**, same as we compared witnesses.
+- **Artifact:** [`../CHALLENGE-fold.md`](../CHALLENGE-fold.md) (my v0, written this session). Gemini's parallel v0 is at [`external/gemini_folding-grammar-v0.md`](external/gemini_folding-grammar-v0.md) — **first next-session action is to compare the two v0 folding grammars**, same as we compared witnesses.
 - **Workflow:** the same drag-to-a-model loop. Drag `CHALLENGE-fold.md`, framing line "Solve this challenge…", grade the returned witness against G + C0–C5, log it in `challenge-attempts.md`.
 - **The live risk (Gemini flagged it, take it seriously):** frontier models are strong on 1-D string logic and weak on 2-D/3-D coordinates, overlaps, and folding. If solvers immediately hallucinate overlapping coordinates or fictitious contacts, **that is the LLM spatial-reasoning wall** — record it, park the folding challenge, and revisit in a model generation. Finding that wall fast is itself a result, not a failure.
 
