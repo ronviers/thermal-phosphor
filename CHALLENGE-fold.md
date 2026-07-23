@@ -1,4 +1,4 @@
-# Challenge (folding, v0) — a self-folding copier whose fidelity *capacity* rides on its own sequence
+# Challenge (folding, v1) — a self-folding copier whose fidelity *capacity* rides on its own sequence
 
 Same target as the 1-D challenge: a driven copier whose copying fidelity is **encoded in the copied sequence** and **vanishes when the drive is cut**. New ingredient: the copier may **fold**. Folding is the one thing that lets a *bounded* local interaction reach an *unbounded* stretch of sequence — by bringing sequence-distant monomers into spatial contact — which is exactly what an *improvable* fidelity needs. (The 1-D version proved sequence-encoded, drive-carried fidelity is real, but showed its capacity caps at ~`d²`: a single proofreading stage is all a 1-D neighborhood can provide. Only folding stacks more.)
 
@@ -6,12 +6,14 @@ Answer with a **witness, not an argument** — an explicit construction that pas
 
 ## The arena (object grammar)
 
+A construction is a tuple **`(S, X, c, A, W)`** — alphabet, fold-map, copy-map, drive, generator.
+
 - **Lattice.** Monomers occupy sites of the 2-D square lattice (integer coordinates). *(Use the 3-D cubic lattice only if the mechanism provably needs more than 4 contacts per site; state which.)*
-- **The chain.** A tape of length `N` is a **self-avoiding walk**: monomers `1…N`; consecutive monomers on adjacent sites (unit distance); **no two monomers on the same site** (hard no-overlap).
+- **The chain & its fold `X`.** A tape of length `N` is a **self-avoiding walk**; `X : {1…N} → ℤ²` maps each monomer index to a lattice site, subject to two hand-checks: **contiguity** ‖`Xᵢ − Xᵢ₋₁`‖₁ = 1 (consecutive monomers adjacent) and **self-avoidance** `Xᵢ ≠ Xⱼ` for `i ≠ j` (hard no-overlap). `X` is the geometry made explicit, so overlap and contact are verifiable by hand.
 - **Alphabet.** `S`, `k = |S| ≥ 2`. `c : S → S` the intended copy map.
 - **Contacts (this is where folding works).** Two monomers that are **lattice-adjacent but not sequence-adjacent** form a *contact*. A contact lets a sequence-distant monomer sit next to a growth site.
 - **Drive.** Scalar affinity `A ≥ 0`; `A = 0` is detailed balance.
-- **Generator `W` — spatially local and uniform.** One rate function applied identically everywhere. A transition's rate may depend only on the monomer states within a **fixed bounded spatial neighborhood** (lattice-distance ≤ `r`, small fixed `r`) of where it acts — and on nothing else: not absolute position, not sequence-index, not a named region. **Folding must itself emerge from `W`** (complementary monomers latch when they come into contact); it is never imposed by hand, and there is no read-head that slides the tape.
+- **Generator `W` — spatially local and uniform.** One rate function applied identically everywhere. A transition's rate may depend only on the monomer states within a **fixed bounded spatial neighborhood** (lattice-distance ≤ `r`, small fixed `r`) of where it acts — and on nothing else: not absolute position, not sequence-index, not a named region. Put positively: **`W` sees only what is *spatially* adjacent** (the 4 lattice-neighbours in 2-D), never what is *sequentially* near — a monomer's index `i` is invisible to it; only `Xᵢ`'s neighbourhood counts. **Folding must itself emerge from `W`** (complementary monomers latch when they come into contact); it is never imposed by hand, and there is no read-head that slides the tape.
 - **Copy dynamics.** A daughter chain is grown against the template; per-site fidelity `qᵢ = P(daughterᵢ = c(Tᵢ))` at read-out; `Q = minᵢ qᵢ`.
 
 ## Deliverable
@@ -51,4 +53,4 @@ For a specific tape, give — all hand-checkable:
 
 Verify **G** from the coordinates (walk self-avoiding, contacts real); recompute `qᵢ` and `Q` from `W` over the spatial neighborhoods; confirm **C0** uniform + spatially-local, folding emergent; **C3** by the `A = 0` identity; **C2** by swapping sequence; **C4** by locating the variant and `N`; **C5** by counting the independent driven-discard stages, checking each comes from a distinct contact, and that the count grows with the folded copier with no rule-fixed ceiling.
 
-*(v0 caveat for the operator, not the solver: hand-checkability is the make-or-break here — keep lattices small and coordinates explicit. If solvers hallucinate overlaps or fictitious contacts, that is the LLM spatial-reasoning ceiling, and finding it fast is itself the result.)*
+*(v1 caveat for the operator, not the solver: hand-checkability is the make-or-break here — keep lattices small and coordinates explicit. **Probe recipe:** require the solver to emit the full `X` coordinate list *before* it writes `W`; an overlap (`Xᵢ = Xⱼ`) or a broken step then surfaces immediately, and if solvers hallucinate overlaps or fictitious contacts, that is the LLM spatial-reasoning ceiling — finding it fast is itself the result.)*
