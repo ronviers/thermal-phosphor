@@ -1,12 +1,12 @@
 # thermal-phosphor — where we are (a brief for visualization)
 
-*A self-contained layout for an outside model asked to turn thermal-phosphor into a video and infographics. Each block below can become one panel or scene. The arc: a pipeline that closes into a loop, hands off at Darwin, and then narrows to a single open gate whose answer, we've now found, has to **fold**. The closing section says what the picture must not claim — keep it.*
+*A self-contained layout for an outside model asked to turn thermal-phosphor into a video and infographics. Each block below can become one panel or scene. The arc: a pipeline that closes into a loop, hands off at Darwin, and then narrows to a single open gate whose real difficulty, we've now found, is **closure** — a copier that copies its own corrector — the one problem the deepest reliability sciences confirm is still open. The closing section says what the picture must not claim — keep it.*
 
 ---
 
 ## The one-sentence version
 
-**thermal-phosphor is a blueprint for *building* — with two tools, a compass and a gradient — an object that copies itself well enough to hand off to Darwin.** It asks where a replicator *comes from* as a construction problem, not a history. The whole arc is drawn as a **circuit**: every step a gate you can see, no black boxes, no equations — the math is enacted by the stuff, not written down.
+**thermal-phosphor is a blueprint for *building* — with two tools, a compass and a gradient — an object that copies itself well enough to hand off to Darwin.** It asks where a replicator *comes from* as a construction problem, not a history. The whole arc is drawn as a **circuit**: every step a gate you can see, no black boxes, no equations — the math is enacted by the stuff, not written down. *(The project's own method is the mirror of this: it never invents machinery — it **imports** established science and reads the circuit through it.)*
 
 ## The kit — two tools and a medium
 
@@ -37,22 +37,36 @@ The line the entire project turns on:
 - **Sorting** — selection picks among a standing population, but improvement is *not stored on the copied object*. (A memory.)
 - **Bootstrapping** — improvement rides on the copied object, so it accumulates. (A replicator.)
 
-Kinetic proofreading (established physics) lets a *drive* buy fidelity. Gate 6 asks for the proofreading *capacity itself* to be **encoded in the copied sequence**. In one grid — the target is the lower-right corner:
+Kinetic proofreading (established physics) lets a *drive* buy fidelity. Gate 6 asks for the whole copier — *including its own error-correction* — to ride on the copied object, so a better copier copies *itself* better. In one grid — the target is the lower-right corner:
 
 | | fidelity **not** drive-elevated | fidelity drive-elevated |
 |---|---|---|
-| fidelity **sequence-independent** | crystal / ROM — *sorts* | standard proofreading — *sorts* |
-| fidelity **sequence-encoded** | — | **gate 6 — the only corner that bootstraps** |
+| corrector **not** on the copied object | crystal / ROM — *sorts* | standard proofreading — *sorts* |
+| corrector **rides on** the copied object | — | **gate 6 — the only corner that bootstraps** |
 
 *Infographic idea: this 2×2 as a quadrant chart; three corners greyed, the bottom-right glowing. Beside it, a "staircase that builds itself" over an Eigen-threshold line — SORT (flat, picking among fixed items) vs BOOTSTRAP (climbing).*
 
-## The new finding — it has to fold
+## The finding — folding found the floor; the real gate is closure
 
-Here is what this project has learned most recently, and it's the visual heart of "where we are." A copier where fidelity sits on the sequence but comes from a **single proofreading stage** is only a *knob*: it tunes fidelity up to a ceiling fixed by chemistry, then stops. To raise the ceiling **without bound** — a genuinely improvable copier — you need to **stack many independent proofreading stages** on the same copied site. And you cannot stack them in a straight line: a 1-D chain can only touch its nearest neighbors.
+This is the visual heart of "where we are," and it comes in two beats.
 
-**The escape is folding.** When the copier **folds**, sequence-distant parts are brought into *spatial* contact, assembling a deep **catalytic pocket** around the growth site — many stages at once. That is exactly what a **ribozyme** is: a sequence that folds into its own copying machine. So the frontier object is a **minimal self-folding, sequence-encoded catalyst** — the smallest fold that copies itself better the better it folds.
+**Beat 1 — folding found the floor.** The natural idea: raise fidelity without limit by **stacking many proofreading stages** on one copied site, and — since a straight chain only reaches its neighbours — let the copier **fold** so sequence-distant parts swing into contact and build a deep catalytic pocket (exactly what a **ribozyme** is). We ran this as a construction challenge. It hit a wall, and then the deep reliability sciences told us *why the wall is a law*: a **single** copied site can only be made *boundedly* more faithful — thermodynamics bounds one component, and every real system (templated-ligation cascades, drive-scavenged proofreading) confirms it *caps*. Folding was a real chapter — it located the field's floor from our own side — but "more stages on one site" is not where unbounded reliability comes from.
 
-*Infographic idea (the hero shot): a glowing 1-D strand of beads folding — sequence-distant beads swinging into contact — to form a pocket that cradles a new bead being copied. Caption: "a straight line can only reach its neighbors; a fold can reach all of itself." This is the loop back to the compass-and-sphere-caps geometry the project started from.*
+**Beat 2 — the real gate is closure.** Every deep field that solved reliability — Shannon's codes, von Neumann's reliable machines, quantum error correction — reaches arbitrarily high reliability the *same* way: **redundancy across many parts + a driven cycle that corrects faster than errors appear.** And every one of them **assumes the corrector already exists.** The one thing none of them solves is the thing gate 6 was always pointing at: **a corrector that copies itself.** That transition — from "a corrector exists" to "the corrector reproduces itself" — is the genuine open gate.
+
+*Infographic idea (the new hero shot): von Neumann's move — a machine reading a blueprint that **includes the machine**, and building a copy of both the machine and the blueprint. A loop where the tape builds the copier that copies the tape. Caption: "reliability everyone can buy; a corrector that copies itself is the part still open."*
+
+## The deep fields, laid alongside
+
+thermal-phosphor's job here is to **import**, not invent — set the established reliability sciences beside the circuit:
+
+- **Shannon** — reliable messages come from **redundant blocks**, never from better single symbols.
+- **von Neumann** — reliable machines from unreliable parts need redundancy + majority correction; *and* he alone framed the constructor that copies its own description.
+- **Quantum error correction** — a logical bit made arbitrarily reliable by many physical bits + a relentless driven correction cycle (the threshold theorem: correct faster than errors are created).
+
+**One sentence they share:** single parts are provably bounded; reliability is redundancy + dissipation; *the corrector copying itself is unsolved.*
+
+*Infographic idea: three columns (a phone line, a logic gate, a qubit lattice) all resolving into the same icon — many-parts + a correcting cycle — with a single dashed box left empty, labelled "copies its own corrector."*
 
 ## Where it stops — the Darwinian threshold
 
@@ -64,16 +78,18 @@ The arc runs **up to, and hands off at, the Darwinian threshold** (Woese) — th
 
 - **The drive half (real):** chemically-fueled **dissipative self-assembly** — structures that live only while fuel flows. Powered-logic, but no copying.
 - **The copy half (real):** **cross-catalytic RNA replicators** (Lincoln & Joyce 2009) — evolving in a test tube, but with full molecular chemistry, the endpoint we want the *least* of.
+- **The nearest bridges to import (with verdicts):** **asymmetric-cooperativity proofreading** — error correction that *scavenges the strand-growth drive itself, no extra fuel* (the least-machinery copier known — and it still **caps**); and the **Virtual Circular Genome** — a *distributed* register where **no single molecule holds the genome**, error suppressed by ecological competition.
 
-**Gate 6 is the minimal bridge between them** — and the folding finding says the bridge is a small self-folding catalyst.
+**Gate 6 is the minimal bridge between these — and the honest bridge is not "more proofreading" but closure: a corrector carried on, and copied by, the object itself.**
 
-*Infographic idea: two beakers with a dashed bridge labelled "GATE 6 — the minimal self-folding copier."*
+*Infographic idea: two beakers with a dashed bridge; the bridge is the self-referential loop from the hero shot, labelled "GATE 6 — closure."*
 
 ---
 
 ## What the picture must NOT claim (keep this rail)
 
 - It is a **construction**, not a **history**. It does not say how life arose on Earth, when, how often, or why only once.
-- The parts are **established and belong to their fields** (von Neumann, Eigen, Hopfield–Ninio kinetic proofreading, templated growth, RNA replicators, Woese, protein/RNA folding). thermal-phosphor's contribution is the **assembly and the reading** — never a discovery, never new physics.
+- The parts are **established and belong to their fields** (von Neumann, Eigen, Shannon, Hopfield–Ninio kinetic proofreading, quantum error correction, templated growth, RNA replicators, Woese). thermal-phosphor **imports and reads** — never a discovery, never new physics, never a new mechanism of its own.
+- **Folding is a chapter, not the answer.** It found the floor (single-site fidelity caps). Do not render it as the solution — the honest hero is the open **closure** gate.
 - **Gate 6 is open.** Show it open (dashed, unfinished) — five gates closed and one honestly open is the accurate, and more interesting, picture.
 - Don't label the project with adjectives about itself (rigorous, honest, elegant). Let the closed gates and the one open gate carry the meaning.
